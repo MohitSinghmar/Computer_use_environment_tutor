@@ -1,0 +1,68 @@
+.custom-calendar {
+  font-family: inherit;
+}
+
+.custom-calendar .rbc-header {
+  padding: 12px 4px;
+  font-weight: 600;
+  border-bottom: 2px solid hsl(var(--border));
+  background: hsl(var(--secondary));
+}
+
+.custom-calendar .rbc-today {
+  background-color: hsl(var(--accent) / 0.1);
+}
+
+.custom-calendar .rbc-event {
+  background-color: hsl(var(--primary));
+  border-radius: 4px;
+  padding: 2px 5px;
+  border: none;
+}
+
+.custom-calendar .rbc-event:hover {
+  background-color: hsl(var(--primary) / 0.9);
+}
+
+.custom-calendar .rbc-selected {
+  background-color: hsl(var(--primary) / 0.8);
+}
+
+.custom-calendar .rbc-toolbar button {
+  color: hsl(var(--foreground));
+  border: 1px solid hsl(var(--border));
+  padding: 6px 16px;
+  border-radius: 6px;
+  background: hsl(var(--background));
+  transition: all 0.2s;
+}
+
+.custom-calendar .rbc-toolbar button:hover {
+  background: hsl(var(--secondary));
+}
+
+.custom-calendar .rbc-toolbar button.rbc-active {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border-color: hsl(var(--primary));
+}
+
+.custom-calendar .rbc-month-view,
+.custom-calendar .rbc-time-view,
+.custom-calendar .rbc-agenda-view {
+  border: 1px solid hsl(var(--border));
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.custom-calendar .rbc-day-bg {
+  border-left: 1px solid hsl(var(--border));
+}
+
+.custom-calendar .rbc-time-slot {
+  border-top: 1px solid hsl(var(--border) / 0.5);
+}
+
+.custom-calendar .rbc-current-time-indicator {
+  background-color: hsl(var(--primary));
+}
